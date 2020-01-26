@@ -142,6 +142,7 @@ function abandonVoidMap() {
 }
 
 function forceAbandonTrimps() {
+	console.log(getPageSetting('ForceAbandon'));
     if (!getPageSetting('ForceAbandon')) return;
     if (!game.global.mapsUnlocked) return;
     if (game.global.mapsActive && getCurrentMapObject().location == "Void") return;
