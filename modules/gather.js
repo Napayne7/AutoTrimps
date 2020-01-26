@@ -13,12 +13,9 @@ function manualLabor2() {
     var lowOnTraps = game.buildings.Trap.owned < 5;
     var notFullPop = game.resources.trimps.owned < game.resources.trimps.realMax();
     var trapTrimpsOK = getPageSetting('TrapTrimps');
-    var targetBreed = getPageSetting('GeneticistTimer');
+    var targetBreed = getPageSetting('ATGA2timer');
     var trapperTrapUntilFull = game.global.challengeActive == "Trapper" && notFullPop;
     var hasTurkimp = game.talents.turkimp2.purchased || game.global.turkimpTimer > 0;
-	
-	debug("test");
-	debug(breedingTrimps);
 
     //FRESH GAME NO HELIUM CODE.
     if (game.global.world <=3 && game.global.totalHeliumEarned<=5000) {
