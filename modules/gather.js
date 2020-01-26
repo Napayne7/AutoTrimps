@@ -17,7 +17,7 @@ function manualLabor2() {
     var trapperTrapUntilFull = game.global.challengeActive == "Trapper" && notFullPop;
     var hasTurkimp = game.talents.turkimp2.purchased || game.global.turkimpTimer > 0;
 	
-	console.log(getBreedTime(true));
+	console.log(getBreedTime());
 
     //FRESH GAME NO HELIUM CODE.
     if (game.global.world <=3 && game.global.totalHeliumEarned<=5000) {
@@ -60,7 +60,7 @@ function manualLabor2() {
             setGather('science');
         }
     }
-    else if (trapTrimpsOK && targetBreed < getBreedTime(true)){
+    else if (trapTrimpsOK && targetBreed < getBreedTime()){
         //combined to optimize code.
         if (game.buildings.Trap.owned < 5 && canAffordBuilding('Trap')) {
             safeBuyBuilding('Trap');
@@ -217,7 +217,7 @@ function RmanualLabor2() {
                  setGather('science');
         }
     }
-    else if (trapTrimpsOK && targetBreed < getBreedTime(true)){
+    else if (trapTrimpsOK && targetBreed < getBreedTime()){
         if (game.buildings.Trap.owned < 5 && canAffordBuilding('Trap')) {
             safeBuyBuilding('Trap');
             setGather('buildings');
