@@ -58,7 +58,7 @@ function manualLabor2() {
             setGather('science');
         }
     }
-    else if (trapTrimpsOK && notFullPop){
+    else if (trapTrimpsOK && targetBreed < getBreedTime(true)){
         //combined to optimize code.
         if (game.buildings.Trap.owned < 5 && canAffordBuilding('Trap')) {
             safeBuyBuilding('Trap');
@@ -215,7 +215,7 @@ function RmanualLabor2() {
                  setGather('science');
         }
     }
-    else if (trapTrimpsOK && notFullPop){
+    else if (trapTrimpsOK && targetBreed < getBreedTime(true)){
         if (game.buildings.Trap.owned < 5 && canAffordBuilding('Trap')) {
             safeBuyBuilding('Trap');
             setGather('buildings');
