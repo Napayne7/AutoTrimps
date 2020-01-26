@@ -17,7 +17,8 @@ function manualLabor2() {
     var trapperTrapUntilFull = game.global.challengeActive == "Trapper" && notFullPop;
     var hasTurkimp = game.talents.turkimp2.purchased || game.global.turkimpTimer > 0;
 	
-	console.log('test ' + targetBreed);
+	console.log('test ');
+	console.log(breedingTrimps);
 
     //FRESH GAME NO HELIUM CODE.
     if (game.global.world <=3 && game.global.totalHeliumEarned<=5000) {
